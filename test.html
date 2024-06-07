@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address Form with Validation and Autofill</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    #finalMessage {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+    #finalImage {
+      display: none;
+      width: 500px;
+      height: 400px;
+    }
+    .addback {
+      /* background-image: url(/Assets/img/back8.jpg); */
+    }
+    .add2 {
+      background-image: url(/Assets/img/back11.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-position: center; */
+      /* background-size: auto; */
+    }
+    .place{
+      color: green;
+    }
+  </style>
+</head>
+<body class="add2">
+
+<div class="addback container mt-5">
+  <h2 id="shippingAddressHeading">Shipping Address</h2>
+  <form id="addressForm" class="needs-validation" novalidate>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputFirstName">First Name</label>
+        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required>
+        <div class="invalid-feedback">
+          Please provide a valid first name.
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputLastName">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
+        <div class="invalid-feedback">
+          Please provide a valid last name.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+      <div class="invalid-feedback">
+        Please provide a valid address.
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <input type="text" class="form-control" id="inputState" readonly>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip" readonly>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div id="addressDisplay" class="mt-5"></div>
+  <div id="finalMessage">
+    <h1>Thank you for your order!</h1>
+    <img id="finalImage" src="/Assets/img/conf2.gif" alt="conf2">
+    <h3 class="place">Your order is placed</h3>
+    <button id="backButton" class="btn btn-primary mt-3">Back to page</button>
+  </div>
+</div>
+
+<script>
+ // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        } else {
+          event.preventDefault();
+          displayAddress();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+// Function to fetch city data using Geoapify API
+async function fetchCityData(city) {
+  const apiUrl = `https://api.geoapify.com/v1/geocode/autocomplete?text=${city}&limit=1&apiKey=46dabca772634892aa72040b88fc9c4e`;
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    // Extract necessary information from the response
+    if (data.features && data.features.length > 0) {
+      const firstResult = data.features[0]; // Assuming the first result is the most relevant
+      const state = firstResult.properties.state;
+      const zip = firstResult.properties.postcode;
+      // Populate form fields with fetched data
+      $('#inputState').val(state);
+      $('#inputZip').val(zip);
+    } else {
+      console.error('No results found for the city:', city);
+    }
+  } catch (error) {
+    console.error('Error fetching city data:', error);
+  }
+}
+
+// Trigger fetchCityData function when input city changes
+$(document).ready(function() {
+  $('#inputCity').on('input', function() {
+    var city = $(this).val();
+    if (city.trim() !== '') {
+      fetchCityData(city);
+    } else {
+      $('#inputState').val('');
+      $('#inputZip').val('');
+    }
+  });
+});
+
+// Function to display the address after form submission
+function displayAddress() {
+  const firstName = $('#inputFirstName').val();
+  const lastName = $('#inputLastName').val();
+  const address = $('#inputAddress').val();
+  const city = $('#inputCity').val();
+  const state = $('#inputState').val();
+  const zip = $('#inputZip').val();
+
+  const addressDisplay = `<div class="border rounded bg-light mb-3">
+    <h3>Submitted Address</h3>
+    <p><strong>First Name:</strong> ${firstName}</p>
+    <p><strong>Last Name:</strong> ${lastName}</p>
+    <p><strong>Address:</strong> ${address}</p>
+    <p><strong>City:</strong> ${city}</p>
+    <p><strong>State:</strong> ${state}</p>
+    <p><strong>Zip:</strong> ${zip}</p>
+    <button id="editButton" class="btn btn-primary mt-3">Edit</button>
+    <button id="doneButton" class="btn btn-primary mt-3">Done</button></div>
+  `;
+
+  $('#addressDisplay').html(addressDisplay);
+
+  $('#editButton').on('click', function() {
+    editAddress();
+  });
+
+  $('#doneButton').on('click', function() {
+    doneAddress();
+  });
+
+  $('#addressForm input, #addressForm button, #addressForm .form-check-input').prop('disabled', true);
+}
+
+// Function to enable editing of the address form
+function editAddress() {
+  $('#addressForm input, #addressForm button, #addressForm .form-check-input').prop('disabled', false);
+  $('#addressDisplay').empty();
+}
+
+// Function to hide all form and address elements and show the final message and image
+function doneAddress() {
+  $('#shippingAddressHeading').hide();
+  $('#addressForm').hide();
+  $('#addressDisplay').hide();
+  $('#finalMessage').show();
+  $('#finalImage').show();
+  document.body.classList.remove('add2');
+  document.body.style.backgroundColor = "white";
+}
+
+// Redirect to index.html when the back button is clicked
+$(document).on('click', '#backButton', function() {
+  window.location.href = 'index.html';
+});
+</script>
+
+</body>
+</html>

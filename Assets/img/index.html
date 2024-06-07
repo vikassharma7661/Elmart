@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <!-- <style>
+          
+.form-control::placeholder {
+   
+    background-image: url('<i class="fa-solid fa-magnifying-glass"></i>');
+    background-repeat: no-repeat;
+    
+    padding-left: 20px;
+}
+
+        </style> -->
+
+    <style>
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .price-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff0000;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .details-view {
+            display: none;
+        }
+
+        .mobilebar {
+            display: none;
+        }
+
+        #close {
+            display: none;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .danger {
+            background-color: #e7272d;
+            color: #e7272d;
+        }
+
+        .mid {
+            top: -10rem;
+        }
+
+        /* Red color for the danger state */
+        .form-range[type=range]:focus {
+            border-color: #dc3545;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+        }
+
+        /* Red color for the progress track */
+        .form-range[type=range]::-webkit-slider-runnable-track {
+            background-color: #dc3545;
+        }
+
+        /* Red color for the thumb */
+        .form-range[type=range]::-webkit-slider-thumb {
+            background-color: #dc3545;
+        }
+
+        .bg-main {
+            background-color: #f7e1dd;
+        }
+
+        .bg-secondry {
+            background-color: #faf7f2;
+        }
+
+        .price-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 12px 12px;
+            font-size: 1rem;
+            z-index: 1;
+        }
+
+
+        .cover {
+            background-image: url(/img/cover1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bodyclass position-relative">
+    <div class="head container-fluid bg-danger text-light col-lg-12 col-sm-12 ">
+        <div class="container">
+            <div class="row bg-danger ">
+                <div class="col-lg-6 col-sm-6">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Currency</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dollar</a></li>
+                                <li><a class="dropdown-item" href="#">Euro</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Language</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6 d-flex justify-content-end">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Wishlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Shoping Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Checkout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row bg-danger">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="logo text-light fs-1 fw-bold ps-3">
+                        <span class="text-warning fs-1 fw-bold">El</span>Mart
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 d-flex align-items-center justify-content-end">
+                    <div class="search col-lg-6 col-sm-6">
+                        <div class="input-group my-lg-3 my-sm-3 ">
+                            <input type="text" class="form-control" placeholder="Search Your Goal" aria-label="Search">
+                            <span class="input-group-text bg-warning text-danger"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                    <div class="user col-lg-1 col-sm-1 ps-3 fs-4">
+                        <i class="fa-solid fa-user"></i>
+                        <!-- <img src="/img/Font Awesome_files/sharp-solid.css" alt=""> -->
+                    </div>
+                    <div class="cart  col-lg-1 col-sm-1 ps-3 fs-4">
+                        
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        
+                  
+                        <!-- <img src="/img/Font Awesome_files/sharp-solid.css" alt=""> -->
+                    </div>
+                    <ul class=" col-lg-2 col-sm-2 list-group text-center fs-4 list-unstyled justify-content-end">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">0.00</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg bg-danger ps-3  ">
+        <div class="container">
+            <div class="mobile ">
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Reservation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Recipe
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="three d-flex pe-4 gap-4" role="search">
+                    <button class="btn btn-warning text-danger" type="submit">Book A Table</button>
+                    <!-- <img src="/img/th"class="pt-2" > -->
+                    <div class="mobilebar menu fs-4 text-light">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    </div>
+    <div class="cover  container my-3 rounded col-lg-12 col-sm-12 col-md-12">
+        <div class="col-12 text-white fs-1 ps-5">
+            Shop
+        </div>
+        <nav class="navbar  navbar-expand-lg  ps-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                        <li class="nav-item text-white">
+                            <a class="nav-link active text-light" aria-current="page" href="#"><i
+                                    class="fa-solid fa-house"></i>Home></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Shop></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Category-01></a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex pe-5 col-6" role="search">
+                    <div class="input-group">
+                        <input id="searchInput" class="form-control me-1" type="search" placeholder="Search Your Favorite Dishes" aria-label="Search">
+                        <button id="searchButton" class="btn btn-outline-success bg-danger text-white" type="button">Search</button>
+                        23>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="col-12 my-3 ps-5 pb-5">
+            <button type="button" class="btn btn-light"><i class="fa-solid fa-x"></i>Burger</button>
+        </div>
+    </div>
+    <div class="mainpop container  mt-5 d-flex ">
+        <div class="row d-flex ">
+
+            <div class="leftpop col-lg-3 col-md-3 bg-main">
+                <div class="row d-flex flex-column ">
+                    <div class="col-2 d-flex align-items-center justify-content-between w-100">
+                        <div id="close">
+                            <i class="fa-solid fa-square-xmark"></i>
+                        </div>
+                        <span class="fs-2 ">Filter</span><span class="fs-5 text-danger">Clear</span>
+                    </div>
+                    <div class="col-lg-10 col-sm-10 ps-4">
+                        <div class="row fs-2">
+                            Category
+                            <div class="row fs-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="breakFast" id="flexCheckDefault" name="check">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Breakfast
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="lunch" id="flexCheckChecked1" name="check">
+                                    <label class="form-check-label1" for="flexCheckChecked1">
+                                        Lunch
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="dinner" id="flexCheckChecked2" name="check">
+                                    <label class="form-check-label2" for="flexCheckChecked2">
+                                        Dinner
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="dryfood" id="flexCheckChecked" name="check">
+                                    <label class="form-check-label3" for="flexCheckChecked">
+                                        Dry Fruits
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" value="drink" id="flexCheckChecked" name="check">
+                                    <label class="form-check-label4" for="flexCheckChecked">
+                                        Drinks 
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row py-3 d-flex justify-content-between gap-5">
+                            <div class="col fs-2 ">Prize</div>
+                            <div class="col fs-2 ps-5"> 
+                                <button class="btn btn-primary align-items-center"  id="filterButton" >Filter</button></div>
+                        </div>
+                        <div class="row">
+
+                            <div class=" col d-flex text-center  gap-4 w-100">
+                                <div class="d-flex">
+                                    <span class="input-group-text">$</span>
+                                    <input type="number"  name="minPrice" id="minPrice"  class="form-control" placeholder="0"
+                                        aria-label="Amount (to the nearest dollar)">
+                                        <label for="minPrice"></label>
+                                </div>
+                                <div class="d-flex "> <span class="input-group-text">$</span>
+                                    <input  type="number" name="maxPrice" id="maxPrice" class="form-control" placeholder="100"
+                                        aria-label="Amount (to the nearest dollar)">
+                                        <label for="maxPrice"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div>
+                                <!-- <label for="customRange2" class="form-label bg-danger">Example range</label> -->
+                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 fs-2 py-3">Popular Food</div>
+                <div class="fivestarfood row col-12">
+
+                    <div class="col col-4 w-25">
+                        <img src="/img/elevated-view-sliced-carrot-lettuce-tomato-corn-onion-parley-plate.png"
+                            class="w-100" alt="">
+                    </div>
+                    <div class="col">
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <div class="">
+                            Natural Food
+                        </div>
+                        <div class="">
+                            $80.00
+                        </div>
+                    </div>
+                </div>
+                <div class="fivestarfood row col-12">
+
+                    <div class="col col-4 w-25">
+                        <img src="/img/mixed-vegetable-chicken-feet-thai-spicy-salad.png" class="w-100" alt="">
+                    </div>
+                    <div class="col">
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <div class="">
+                            Thai Lettuce Wraps
+                        </div>
+                        <div class="">
+                            $80.00
+                        </div>
+                    </div>
+                </div>
+                <div class="fivestarfood row col-12">
+
+                    <div class="col col-4 w-25">
+                        <img src="/img/top-view-tasty-vegetable-salad-inside-plate-dark-blue-background-color-cuisine-lunch-health-food-diet-meal.png"
+                            class="w-100" alt="">
+                    </div>
+                    <div class="col">
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <div class="">
+                            Natural Food
+                        </div>
+                        <div class="">
+                            $80.00
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 fs-2 py-3">Tags</div>
+
+
+                <div class="row col-12 ps-2 gap-2 text-danger">
+                    <button class="col-5 col border border-black btn-outline-secondary rounded-pill text-danger">chines
+                        food</button>
+                    <button
+                        class="col-4 col border border-black btn-outline-secondary rounded-pill text-danger">chips</button>
+                    <!-- <button class=" col btn-outline-secondary rounded-pill text-danger" >coldrink</button>
+                    <button class=" col btn-outline-secondary rounded-pill text-danger" >italic</button>
+                    <button class=" col btn-outline-secondary rounded-pill text-danger" >chip</button> -->
+                </div>
+                <div class="row col-12 ps-2 gap-3 py-3 text-danger">
+                    <button
+                        class="col-5 col border border-black btn-outline-secondary rounded-pill text-danger">coldrink</button>
+                    <button
+                        class=" col-4 col border border-danger btn-outline-secondary rounded-pill text-danger">italic</button>
+                    <!-- <button class=" col-3 btn-outline-secondary rounded-pill text-danger" >chip</button> -->
+                </div>
+                <div class="row col-12 ps-2 gap-3 py-2 text-danger">
+                    <button
+                        class=" col-3 border border-black  btn-outline-secondary rounded-pill text-danger">Burger</button>
+                    <button
+                        class=" col-3 border border-black btn-outline-secondary rounded-pill text-danger">Dosa</button>
+                    <button
+                        class=" col-3 border border-black btn-outline-secondary rounded-pill text-danger">Coffee</button>
+                </div>
+            </div>
+
+
+
+            <div class="rightpop col  bg-secondry col-lg-9 col-sm-9 col-md-9 position-relative ">
+                <div class=" w-25 details-view " id="detailsView">
+                    <div class="">
+                        <img src="" class="w-100" id="detailsImage" alt="Details Image">
+                        <div class="w-100">
+                            <div class="w100 d-flex flex-column ">
+                               <div class="w-100 d-flex gap-4">
+                                <div class="fs-4 fw-bold" id="detailsTitle"> </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                </div>
+                               </div>
+                               
+                            </div>
+
+                            <div class="w-100 d-flex flex-column gap-4">
+
+                            <div class="w-100 d-flex justify-content-between">
+                                <select class="form-select w-50" aria-label="Default select example">
+                                    <option selected>Select Plate Size</option>
+                                    <option value="1">Full Plate</option>
+                                    <option value="2">Medium Plate</option>
+                                    <option value="3">Small Plate</option>
+                                </select>
+                                <div class="fw-bold" id="detailsPrice"></div>
+                            </div>
+                                <div class="w-100 d-flex gap-2">
+                                    <button class=" btn bg-warning rounded border fw-bold fs-6 w-50">Order Now</button>
+                                    <button class="btn bg-danger rounded border fw-bold fs-6 w-50" id="closebtn1">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+
+                    </div>
+                </div>
+
+                <div class="toolbar  d-flex gap-4 justify-content-between mb-3">
+                    <div class="left  gap-4 d-flex justify-content-center align-items-center ">
+                        <span>Showing 18 of 36 results</span>
+                        <i class="fas fa-bars" data-view="list"></i>
+                        <i class="fas fa-th-large" data-view="grid-large"></i>
+                        <i class="fas fa-th" data-view="grid"></i>
+                        <i class="fas fa-th-list" data-view="list-alt"></i>
+                    </div>
+                    <div class="right d-flex w-50  gap-4 d-flex justify-content-center align-items-center ">
+                        <div class="form-check d-flex">
+                            <input type="checkbox" class="form-check-input " id="showSealProduct">
+                            <label class="form-check-label " for="showSealProduct">Show only seal product</label>
+                        </div>
+                        <select class="form-control w-25" id="showItemsCount">
+                            <option>Show: 50</option>
+                            <option>Show: 10</option>
+                            <option>Show: 20</option>
+                            <option>Show: 30</option>
+                            <option>Show: 40</option>
+                        </select>
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort by: Featured
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="sortDropdown">
+                            <a class="dropdown-item" href="#">Price: Low to High</a>
+                            <a class="dropdown-item" href="#">Price: High to Low</a>
+                            <a class="dropdown-item" href="#">Newest</a>
+                            <a class="dropdown-item" href="#">Oldest</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="itemsContainer">
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9 d-flex justify-content-between align-items-center my-5 pb-5">
+                <nav aria-label="navigation example">
+                    <ul class="pagination mb-0">
+                        <li class="page-item mx-2">
+                            <a class="bg-secondry  text-dark btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center fs-5"
+                                href="#" style="width: 3rem; height: 3rem;" id="one">1</a>
+                        </li>
+                        <li class="page-item mx-2">
+                            <a class="bg-secondry  text-dark btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center fs-5"
+                                href="#" style="width: 3rem; height: 3rem;" id="two" >2</a>
+                        </li>
+                        <li class="page-item mx-2">
+                            <a class="bg-secondry  text-dark btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center fs-5"
+                                href="#" style="width: 3rem; height: 3rem;" id="three">3</a>
+                        </li>
+                        <li class="page-item mx-2">
+                            <a class="bg-secondry text-dark btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center fs-5"
+                                href="#" style="width: 3rem; height: 3rem;" id="four">4</a>
+                        </li>
+                        <li class="page-item mx-2">
+                            <a class="bg-secondry  text-dark btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                                href="#" aria-label="Next" style="width: 3rem; height: 3rem;">
+                                <span aria-hidden="true">&gt;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="fs-5">Page: 1 of 4</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row align-items-end ">
+            <div class="col-lg-1 col-sm-1 col-md-1">
+                <img src="/img/fire.jpg " width="120" alt="">
+            </div>
+            <div class="col-lg-10 col-sm-10 col-md-10 position-relative">
+                <div class="mid container bg-danger  text-light rounded position-absolute">
+                    <div class="row ">
+                        <div class="col-lg-5 col-md-5 col-sm-5 ps-5 my-5">
+                            <div class="ps-5 fs-2 fw-bold">Welcome treat first order offer</div>
+                            <div class="ps-5">Numquam commodi impedit, quasi neque voluptate necessitatibus ipsa
+                                nulla!</div>
+
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6 d-flex align-items-center justify-content-center">
+                            <div class="input-group mb-3 w-75">
+                                <input type="text" class="form-control border" placeholder="Enter Your Email"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="bg-warning text-danger fs-6 fw-bold border" type="button"
+                                    id="button-addon2">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1">
+                <img src="/img/fire.jpg" width="90" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container  d-flex bg-dark text-light rounded">
+        <div class="row">
+            <div class="col-4 pt-5 ps-5">
+                <h1 class="fs-1 pt-5 fw-bold"><span class="text-danger fs-1">El</span>Mart</h1>
+                <p class="fs-6 py-3">Welcome to Foodizo, Where passian Meet plate symphony of flavares Nestled
+                    in the Heart beour
+                    Resturant invite you on journey.</p>
+                <div class="icons d-flex gap-2 pb-5">
+                    <div class="social fs-1"><i class="fa-brands fa-square-facebook"></i></div>
+                    <div class="social fs-1"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="social fs-1"><i class="fa-brands fa-square-twitter"></i></div>
+                    <div class="social fs-1 "><i class="fa-brands fa-square-instagram"></i></div>
+                </div>
+            </div>
+
+            <div class="col-4  pt-5 ps-5">
+                <div class="fs-2 fw-bold pt-5 pb-3">Our Company</div>
+                <div class="d-flex justify-content-between fw-bold pb-2">
+                    <a href="#">About Us</a><a href="#">Blog</a>
+                </div>
+                <div class="d-flex justify-content-between fw-bold pb-2">
+                    <a href="#">Resturant</a><a href="#">Reservation</a>
+                </div>
+                <div class="d-flex justify-content-between fw-bold pb-2">
+                    <a href="#">Report a Bug</a><a href="#">Food Delivery</a>
+                </div>
+                <div class="d-flex justify-content-between fw-bold pb-2">
+                    <a href="#">FAQ</a><a href="#">Contect Us</a>
+                </div>
+            </div>
+            <div class="col-4 pt-5 ps-5 text-danger">
+                <div class="fs-2 fw-bold pt-5 pb-3 text-light">Opening Hours</div>
+                <div class="d-flex justify-content-between fw-bold pb-2">
+                    <div>Mon-Tue</div>
+                    <div>9.00 am - 10.00 pm</div>
+                </div>
+                <div class="d-flex justify-content-between fw-bold pb-2">
+                    <div>Wed-Thu</div>
+                    <div>10.00 am - 11.00 pm</div>
+                </div>
+                <div class=" fw-bold pb-2 d-flex justify-content-between">
+                    <div>Saturday</div>
+                    <div>10.00 am - 11.00 pm</div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    </div>
+    <div class=" bg-danger fs-5 d-flex justify-content-center">
+        <div class="py-3 text-light">
+            Copyright <i class="fa-regular fa-copyright"></i>All right reserved
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

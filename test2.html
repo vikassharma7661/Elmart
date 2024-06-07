@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+        }
+
+        .table-container,
+        .form-container {
+            margin-bottom: 50px;
+        }
+
+        .table-container button {
+            display: none;
+            /* Hide the button initially */
+        }
+
+        #allthings {
+            display: none;
+            /* Hide the allthings div initially */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-container">
+            <h2 class="text-center mb-4">Reservation List</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Guests</th>
+                    </tr>
+                </thead>
+                <tbody id="reservationTable">
+                    <!-- Table rows will be added here dynamically -->
+                </tbody>
+                <tr>
+                    <th colspan="5" class="text-center">
+                        <button class="btn btn-primary" onclick="bookTable()">Book a Table</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-container">
+            <h2 class="text-center mb-4">Book a Table</h2>
+            <form id="reservationForm" class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <div class="invalid-feedback">
+                            Please provide your name.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="phone">Phone</label>
+                        <input type="tel" class="form-control" id="phone" required pattern="^\d{10}$">
+                        <div class="invalid-feedback">
+                            Please provide a valid phone number.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                        <div class="invalid-feedback">
+                            Please provide a date.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="time">Time</label>
+                        <input type="time" class="form-control" id="time" required>
+                        <div class="invalid-feedback">
+                            Please provide a time.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" class="form-control" id="guests" required min="1">
+                        <div class="invalid-feedback">
+                            Please provide the number of guests.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="allthings" class="text-center">
+        <h1>Congratulations Your Table Is Booked!</h1>
+        <img src="/Assets/img/rig.gif" alt="">
+        <h4>You are welcome</h4>
+        <button class="btn btn-primary" onclick="backToMain() "><a class="text-light" href="/index.html">Back to main page</a></button>
+    </div>
+
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        if (form.checkValidity() === false || form.hasAttribute('data-submitted')) {
+                            event.stopPropagation();
+                        } else {
+                            addReservation();
+                            form.setAttribute('data-submitted', true); // Mark the form as submitted
+                            form.querySelectorAll('button[type="submit"]')[0].setAttribute('disabled', true); // Disable the submit button
+                            showBookButton(); // Show the book button
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+        function addReservation() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+
+            const table = document.getElementById('reservationTable');
+            const row = table.insertRow();
+            row.insertCell(0).innerText = name;
+            row.insertCell(1).innerText = phone;
+            row.insertCell(2).innerText = date;
+            row.insertCell(3).innerText = time;
+            row.insertCell(4).innerText = guests;
+
+            // Disable all input fields
+            document.querySelectorAll('#reservationForm input').forEach(function (input) {
+                input.setAttribute('disabled', true);
+            });
+
+            // Disable the submit button
+            document.querySelector('#reservationForm button[type="submit"]').setAttribute('disabled', true);
+
+            document.getElementById('reservationForm').classList.remove('was-validated');
+        }
+
+        function showBookButton() {
+            document.querySelector('.table-container button').style.display = 'inline-block';
+        }
+
+        function bookTable() {
+            // Hide all divs and show the allthings div
+            document.querySelector('.container').style.display = 'none';
+            document.getElementById('allthings').style.display = 'block';
+        }
+
+        function backToMain() {
+            // Function to handle 'Back to main page' button click
+            document.getElementById('allthings').style.display = 'none';
+            document.querySelector('.container').style.display = 'block';
+            // Reset the form and re-enable the inputs and submit button
+            const form = document.getElementById('reservationForm');
+            form.reset();
+            form.removeAttribute('data-submitted');
+            document.querySelectorAll('#reservationForm input').forEach(function (input) {
+                input.removeAttribute('disabled');
+            });
+            document.querySelector('#reservationForm button[type="submit"]').removeAttribute('disabled');
+        }
+    </script>
+
+</body>
+
+</html>
