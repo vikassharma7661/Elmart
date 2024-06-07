@@ -4,106 +4,106 @@
       "id": "1",
       "title": "Paneer",
       "price": "$80",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/sahi paneer.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/sahi paneer.jpg",
       "description": "A delicious paneer dish."
     },
     {
       "id": "2",
       "title": "Tanduri Paneer",
       "price": "$80",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
       "description": "Fresh and juicy raspberries."
     },
     {
       "id": "3",
       "title": "Kabab",
       "price": "$50",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg",
       "description": "Strawberries served with yogurt."
     },
     {
       "id": "4",
       "title": "Burger",
       "price": "$65",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/barger2.webp",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/barger2.webp",
       "description": "A healthy and fresh salad."
     },
     {
       "id": "5",
       "title": "One Bowl Finger Chips",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg",
       "description": "Delicious pasta dish."
     },
     {
       "id": "6",
       "title": "Full Plate Kabab",
       "price": "$85",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp",
       "description": "Classic Caesar salad."
     },
     {
       "id": "7",
       "title": "Paneer Tikka",
       "price": "$155",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
       "description": "Tasty cookies."
     },
     {
       "id": "8",
       "title": "Vegetable Salad",
       "price": "$38",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/veg.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/veg.jpg",
       "description": "A fresh vegetable salad."
     },
     {
       "id": "9",
       "title": "Chicken",
       "price": "$100",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/chiken.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chiken.jpg",
       "description": "Grilled chicken dish."
     },
     {
       "id": "10",
       "title": "Sandwich & Chips",
       "price": "$65",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg",
       "description": "Sandwich served with chips."
     },
     {
       "title": "Pasta Combo",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg",
       "description": "Pasta combo meal."
     },
     {
       "title": "Burger Combo",
       "price": "$85",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg",
       "description": "Burger served with fries and a drink."
     },
     {
       "title": "Momos",
       "price": "$155",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/momos.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/momos.jpg",
       "description": "Steamed momos."
     },
     {
       "title": "Salad",
       "price": "$65",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/slad.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/slad.jpg",
       "description": "A healthy salad."
     },
     {
       "title": "Pasta",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif",
       "description": "Delicious pasta dish."
     },
     {
       "title": "Caesar Salad",
       "price": "$85",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/im2.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/im2.jpg",
       "description": "Classic Caesar salad."
     }
   ],
@@ -111,37 +111,37 @@
     {
       "title": "Vegetable Salad",
       "price": "$38",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/veg.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/veg.jpg",
       "description": "A fresh vegetable salad."
     },
     {
       "title": "Sandwich & Chips",
       "price": "$65",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg",
       "description": "Sandwich served with chips."
     },
     {
       "title": "Pasta Combo",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg",
       "description": "Pasta combo meal."
     },
     {
       "title": "Salad",
       "price": "$65",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/slad.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/slad.jpg",
       "description": "A healthy salad."
     },
     {
       "title": "Pasta",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif",
       "description": "Delicious pasta dish."
     },
     {
       "title": "Caesar Salad",
       "price": "$85",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/im2.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/im2.jpg",
       "description": "Classic Caesar salad."
     }
   ],
@@ -149,37 +149,37 @@
     {
       "title": "Greens corns and chicken",
       "price": "$50",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/lunch1.png",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch1.png",
       "description": "delicious food"
     },
     {
       "title": "Tasty chicken noodles",
       "price": "$65",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/lunch.3.png",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.3.png",
       "description": "Sweet taste."
     },
     {
       "title": "Noodles",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/lunch.4.png",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.4.png",
       "description": "Very delicious."
     },
     {
       "title": "Spring rolls concept",
       "price": "$155",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/lunch.6.png",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.6.png",
       "description": "Flat lay of delicious"
     },
     {
       "title": "Shrimp rolls with chopsticks",
       "price": "$100",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/lunch.7.png",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.7.png",
       "description": "famous dish."
     },
     {
       "title": "high protein soup meal",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/lunch.8.png",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.8.png",
       "description": "best for health."
     }
   ],
@@ -187,44 +187,589 @@
     {
       "title": "Kabab",
       "price": "$50",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg",
       "description": "Strawberries served with yogurt."
     },
     {
       "title": "Burger",
       "price": "$65",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/barger2.webp",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/barger2.webp",
       "description": "A healthy and fresh salad."
     },
     {
       "title": "One Bowl Finger Chips",
       "price": "$280",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg",
       "description": "Delicious pasta dish."
     },
     {
       "title": "Full Plate Kabab in cheep prize",
       "price": "$85",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp",
       "description": "Classic Caesar salad."
     },
     {
       "title": "Paneer Tikka",
       "price": "$155",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
       "description": "Tasty cookies."
+    },
+    {
+      "title": "Chicken",
+      "price": "$100",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chiken.jpg",
+      "description": "Grilled chicken dish."
+    },
+    {
+      "title": "Pasta Combo",
+      "price": "$280",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg",
+      "description": "Pasta combo meal."
     },
     {
       "title": "Burger Combo",
       "price": "$85",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg",
       "description": "Burger served with fries and a drink."
     },
     {
       "title": "Momos",
       "price": "$155",
-      "image": "vikassharma7661.github.io/Elmart/Assets/img/momos.jpg",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/momos.jpg",
       "description": "Steamed momos."
     }
+  ],
+  "dryfood": [
+    {
+      "title": "Greens corns and chicken",
+      "price": "$50",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch1.png",
+      "description": "Delicious food."
+    },
+    {
+      "title": "Tasty chicken noodles",
+      "price": "$65",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.3.png",
+      "description": "Sweet taste."
+    },
+    {
+      "title": "Spring rolls concept",
+      "price": "$155",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.6.png",
+      "description": "Flat lay of delicious."
+    },
+    {
+      "title": "Shrimp rolls with chopsticks",
+      "price": "$100",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.7.png",
+      "description": "Famous dish."
+    },
+    {
+      "title": "High protein soup meal",
+      "price": "$280",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/lunch.8.png",
+      "description": "Best for health."
+    }
+  ],
+  
+  "drink": [
+    {
+      "title": "Cappuccino",
+      "price": "$4",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink1.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Latte",
+      "price": "$8",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink2.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Espresso",
+      "price": "$10",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink3.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Americano",
+      "price": "$14",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink4.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Mocha",
+      "price": "$24",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink5.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Hot Chocolate",
+      "price": "$22",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink6.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Green Tea",
+      "price": "$42",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink7.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Iced Coffee",
+      "price": "$32",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink8.jpg",
+      "description": "Great Taste"
+    }
   ]
+  ,
+    "page2" :[
+        {
+          "title": "Cappuccino",
+          "price": "$4",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink1.jpg",
+          "description": "Great Taste"
+        },
+        {
+          "title": "Latte",
+          "price": "$8",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink2.jpg",
+          "description": "Great Taste"
+        },
+        {
+          "title": "Espresso",
+          "price": "$10",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink3.jpg",
+          "description": "Great Taste"
+        },
+        {
+          "title": "Americano",
+          "price": "$14",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink4.jpg",
+          "description": "Great Taste"
+        },
+        {
+          "title": "Mocha",
+          "price": "$24",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink5.jpg",
+          "description": "Great Taste"
+        },
+        {
+          "title": "Hot Chocolate",
+          "price": "$22",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink6.jpg",
+          "description": "Great Taste"
+        },
+        {
+          "title": "Green Tea",
+          "price": "$42",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink7.jpg",
+          "description": "Great Taste"
+        },
+        {
+          "title": "Iced Coffee",
+          "price": "$32",
+          "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink8.jpg",
+          "description": "Great Taste"
+        }
+      
+    ],
+    "page3" :[
+      {
+        "title": "Tanduri Paneer",
+        "price": "$80",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
+        "description": "Fresh and juicy raspberries."
+      },
+      {
+        "title": "Kabab",
+        "price": "$50",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg",
+        "description": "Strawberries served with yogurt."
+      },
+      {
+        "title": "Burger",
+        "price": "$65",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/barger2.webp",
+        "description": "A healthy and fresh salad."
+      },
+      {
+        "title": "One Bowl Finger Chips",
+        "price": "$280",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg",
+        "description": "Delicious pasta dish."
+      },
+      {
+        "title": "Full Plate Kabab",
+        "price": "$85",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp",
+        "description": "Classic Caesar salad."
+      },
+      {
+        "title": "Paneer Tikka",
+        "price": "$155",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
+        "description": "Tasty cookies."
+      },
+      {
+        "title": "Vegetable Salad",
+        "price": "$38",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/veg.jpg",
+        "description": "A fresh vegetable salad."
+      },
+      {
+        "title": "Chicken",
+        "price": "$100",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chiken.jpg",
+        "description": "Grilled chicken dish."
+      },
+      {
+        "title": "Sandwich & Chips",
+        "price": "$65",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg",
+        "description": "Sandwich served with chips."
+      },
+      {
+        "title": "Pasta Combo",
+        "price": "$280",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg",
+        "description": "Pasta combo meal."
+      },
+      {
+        "title": "Burger Combo",
+        "price": "$85",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg",
+        "description": "Burger served with fries and a drink."
+      },
+      {
+        "title": "Momos",
+        "price": "$155",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/momos.jpg",
+        "description": "Steamed momos."
+      },
+      {
+        "title": "Salad",
+        "price": "$65",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/slad.jpg",
+        "description": "A healthy salad."
+      },
+      {
+        "title": "Pasta",
+        "price": "$280",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif",
+        "description": "Delicious pasta dish."
+      },
+      {
+        "title": "Caesar Salad",
+        "price": "$85",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/im2.jpg",
+        "description": "Classic Caesar salad."
+      }
+
+    ], "page4" :[
+      {
+        "title": "Tanduri Paneer",
+        "price": "$80",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
+        "description": "Fresh and juicy raspberries."
+      },
+      {
+        "title": "Kabab",
+        "price": "$50",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg",
+        "description": "Strawberries served with yogurt."
+      },
+      {
+        "title": "Burger",
+        "price": "$65",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/barger2.webp",
+        "description": "A healthy and fresh salad."
+      },
+      {
+        "title": "One Bowl Finger Chips",
+        "price": "$280",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg",
+        "description": "Delicious pasta dish."
+      },
+      {
+        "title": "Full Plate Kabab",
+        "price": "$85",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp",
+        "description": "Classic Caesar salad."
+      },
+      {
+        "title": "Paneer Tikka",
+        "price": "$155",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg",
+        "description": "Tasty cookies."
+      },
+      {
+        "title": "Vegetable Salad",
+        "price": "$38",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/veg.jpg",
+        "description": "A fresh vegetable salad."
+      },
+      {
+        "title": "Chicken",
+        "price": "$100",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chiken.jpg",
+        "description": "Grilled chicken dish."
+      },
+      {
+        "title": "Sandwich & Chips",
+        "price": "$65",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg",
+        "description": "Sandwich served with chips."
+      },
+      {
+        "title": "Pasta Combo",
+        "price": "$280",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg",
+        "description": "Pasta combo meal."
+      },
+      {
+        "title": "Burger Combo",
+        "price": "$85",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg",
+        "description": "Burger served with fries and a drink."
+      },
+      {
+        "title": "Momos",
+        "price": "$155",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/momos.jpg",
+        "description": "Steamed momos."
+      },
+      {
+        "title": "Salad",
+        "price": "$65",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/slad.jpg",
+        "description": "A healthy salad."
+      },
+      {
+        "title": "Pasta",
+        "price": "$280",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif",
+        "description": "Delicious pasta dish."
+      },
+      {
+        "title": "Caesar Salad",
+        "price": "$85",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/im2.jpg",
+        "description": "Classic Caesar salad."
+      }
+    ]
+  ,
+  "chinese food" :[
+    {
+      "title": "Noodles with chiken ",
+        "price": "$50",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chin1.jpg",
+        "description": "chinese cuisine with chiken"
+    }
+    ,
+    {
+      "title": "Pasta Fettuccine Bolognese",
+        "price": "$20",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chin2.jpg",
+        "description": "tomato sauce in white bowl."
+    },
+    {
+      "title": "chinken teriyaki sauce",
+        "price": "$20",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chin3.jpg",
+        "description": "Baked chicken wings"
+    },
+    {
+      "title": "pie on table",
+        "price": "$20",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chin4.jpg",
+        "description": "Top view delicious"
+    }
+  ],
+  "chips" :[
+    {
+      "title": "Chips with souse",
+        "price": "$70",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips1.jpg",
+        "description": "very popular item"
+    }
+    ,
+    {
+      "title": "Chips combo",
+        "price": "$60",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips2.jpg",
+        "description": "chips with copy pace"
+    },
+    {
+      "title": "fried potato chips",
+        "price": "$80",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips3.jpg",
+        "description": "greaseproof paper"
+    },
+    {
+      "title": "chips food dishes",
+        "price": "$26",
+        "image":"https://vikassharma7661.github.io/Elmart/Assets/img/chips4.jpg",
+        "description": "Top view delicious"
+    }
+  ],
+  "colddrink" :[
+    {
+      "title": "Cappuccino",
+      "price": "$4",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink1.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Latte",
+      "price": "$8",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink2.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Espresso",
+      "price": "$10",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink3.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Americano",
+      "price": "$14",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink4.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Mocha",
+      "price": "$24",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink5.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Hot Chocolate",
+      "price": "$22",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink6.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Green Tea",
+      "price": "$42",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink7.jpg",
+      "description": "Great Taste"
+    },
+    {
+      "title": "Iced Coffee",
+      "price": "$32",
+      "image": "https://vikassharma7661.github.io/Elmart/Assets/img/drink8.jpg",
+      "description": "Great Taste"
+    }
+  ],
+  "italic food" :[
+    {
+      "title": "Chips with souse",
+        "price": "$70",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips1.jpg",
+        "description": "very popular item"
+    }
+    ,
+    {
+      "title": "Chips combo",
+        "price": "$60",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips2.jpg",
+        "description": "chips with copy pace"
+    },
+    {
+      "title": "fried potato chips",
+        "price": "$80",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips3.jpg",
+        "description": "greaseproof paper"
+    },
+    {
+      "title": "chips food dishes",
+        "price": "$26",
+        "image":"https://vikassharma7661.github.io/Elmart/Assets/img/chips4.jpg",
+        "description": "Top view delicious"
+    }
+  ],
+  "Burger" :[
+    {
+      "title": "Chips with souse",
+        "price": "$70",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips1.jpg",
+        "description": "very popular item"
+    }
+    ,
+    {
+      "title": "Chips combo",
+        "price": "$60",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips2.jpg",
+        "description": "chips with copy pace"
+    },
+    {
+      "title": "fried potato chips",
+        "price": "$80",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips3.jpg",
+        "description": "greaseproof paper"
+    },
+    {
+      "title": "chips food dishes",
+        "price": "$26",
+        "image":"https://vikassharma7661.github.io/Elmart/Assets/img/chips4.jpg",
+        "description": "Top view delicious"
+    }
+  ],
+  "Dosa" :[
+    {
+      "title": "Chips with souse",
+        "price": "$70",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips1.jpg",
+        "description": "very popular item"
+    }
+    ,
+    {
+      "title": "Chips combo",
+        "price": "$60",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips2.jpg",
+        "description": "chips with copy pace"
+    },
+    {
+      "title": "fried potato chips",
+        "price": "$80",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips3.jpg",
+        "description": "greaseproof paper"
+    },
+    {
+      "title": "chips food dishes",
+        "price": "$26",
+        "image":"https://vikassharma7661.github.io/Elmart/Assets/img/chips4.jpg",
+        "description": "Top view delicious"
+    }
+  ],
+  "coffee" :[
+    {
+      "title": "Chips with souse",
+        "price": "$70",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips1.jpg",
+        "description": "very popular item"
+    }
+    ,
+    {
+      "title": "Chips combo",
+        "price": "$60",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips2.jpg",
+        "description": "chips with copy pace"
+    },
+    {
+      "title": "fried potato chips",
+        "price": "$80",
+        "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chips3.jpg",
+        "description": "greaseproof paper"
+    },
+    {
+      "title": "chips food dishes",
+        "price": "$26",
+        "image":"https://vikassharma7661.github.io/Elmart/Assets/img/chips4.jpg",
+        "description": "Top view delicious"
+    }
+  ]
+
 }
