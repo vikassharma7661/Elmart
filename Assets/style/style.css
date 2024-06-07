@@ -12,6 +12,9 @@
             display: flex;
             
         }
+    .fire{
+        display: none;
+    }
    #close{
     display: flex
    }
