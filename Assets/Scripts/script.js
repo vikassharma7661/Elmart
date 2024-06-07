@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let foodData = {};
 
     // Fetch the food items from the JSON file
-    fetch('vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
+    fetch('https://vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
         .then(response => response.json())
         .then(data => {
             foodData = data;
@@ -100,22 +100,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function () {
     const foodItems = [
-        { "title": "Paneer", "price": "$80", "image": "vikassharma7661.github.io/Elmart/Assets/img/sahi paneer.jpg", "description": "A delicious paneer dish." },
-        { "title": "Tanduri Paneer", "price": "$80", "image": "vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg", "description": "Fresh and juicy raspberries." },
-        { "title": "Kabab", "price": "$50", "image": "vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg", "description": "Strawberries served with yogurt." },
-        { "title": "Burger", "price": "$65", "image": "vikassharma7661.github.io/Elmart/Assets/img/barger2.webp", "description": "A healthy and fresh salad." },
-        { "title": "One Bowl Finger Chips", "price": "$280", "image": "vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg", "description": "Delicious pasta dish." },
-        { "title": "Full Plate Kabab", "price": "$85", "image": "vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp", "description": "Classic Caesar salad." },
-        { "title": "Paneer Tikka", "price": "$155", "image": "vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg", "description": "Tasty cookies." },
-        { "title": "Vegetable Salad", "price": "$38", "image": "vikassharma7661.github.io/Elmart/Assets/img/veg.jpg", "description": "A fresh vegetable salad." },
-        { "title": "Chicken", "price": "$100", "image": "vikassharma7661.github.io/Elmart/Assets/img/chiken.jpg", "description": "Grilled chicken dish." },
-        { "title": "Sandwich & Chips", "price": "$65", "image": "vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg", "description": "Sandwich served with chips." },
-        { "title": "Pasta Combo", "price": "$280", "image": "vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg", "description": "Pasta combo meal." },
-        { "title": "Burger Combo", "price": "$85", "image": "vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg", "description": "Burger served with fries and a drink." },
-        { "title": "Momos", "price": "$155", "image": "vikassharma7661.github.io/Elmart/Assets/img/momos.jpg", "description": "Steamed momos." },
-        { "title": "Salad", "price": "$65", "image": "vikassharma7661.github.io/Elmart/Assets/img/slad.jpg", "description": "A healthy salad." },
-        { "title": "Pasta", "price": "$280", "image": "vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif", "description": "Delicious pasta dish." },
-        { "title": "Caesar Salad", "price": "$85", "image": "vikassharma7661.github.io/Elmart/Assets/img/im2.jpg", "description": "Classic Caesar salad." }
+        { "title": "Paneer", "price": "$80", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/sahi paneer.jpg", "description": "A delicious paneer dish." },
+        { "title": "Tanduri Paneer", "price": "$80", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg", "description": "Fresh and juicy raspberries." },
+        { "title": "Kabab", "price": "$50", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/full plate kabab.jpg", "description": "Strawberries served with yogurt." },
+        { "title": "Burger", "price": "$65", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/barger2.webp", "description": "A healthy and fresh salad." },
+        { "title": "One Bowl Finger Chips", "price": "$280", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/one bowl chips.jpg", "description": "Delicious pasta dish." },
+        { "title": "Full Plate Kabab", "price": "$85", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/kabab 1.webp", "description": "Classic Caesar salad." },
+        { "title": "Paneer Tikka", "price": "$155", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/tanduri paneer tikka.jpg", "description": "Tasty cookies." },
+        { "title": "Vegetable Salad", "price": "$38", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/veg.jpg", "description": "A fresh vegetable salad." },
+        { "title": "Chicken", "price": "$100", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/chiken.jpg", "description": "Grilled chicken dish." },
+        { "title": "Sandwich & Chips", "price": "$65", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/san chip.jpg", "description": "Sandwich served with chips." },
+        { "title": "Pasta Combo", "price": "$280", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pas com.jpg", "description": "Pasta combo meal." },
+        { "title": "Burger Combo", "price": "$85", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/com bur.jpg", "description": "Burger served with fries and a drink." },
+        { "title": "Momos", "price": "$155", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/momos.jpg", "description": "Steamed momos." },
+        { "title": "Salad", "price": "$65", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/slad.jpg", "description": "A healthy salad." },
+        { "title": "Pasta", "price": "$280", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/pasta1.avif", "description": "Delicious pasta dish." },
+        { "title": "Caesar Salad", "price": "$85", "image": "https://vikassharma7661.github.io/Elmart/Assets/img/im2.jpg", "description": "Classic Caesar salad." }
     ];
 
     function displayItems(items) {
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let foodData = {};
 
     // Fetch the food items from the JSON file
-    fetch('vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
+    fetch('https://vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
         .then(response => response.json())
         .then(data => {
             foodData = data;
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let foodData = {};
 
     // Fetch the food items from the JSON file
-    fetch('vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
+    fetch('https://vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
         .then(response => response.json())
         .then(data => {
             foodData = data;
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let foodData = {};
 
     // Fetch the food items from the JSON file
-    fetch('vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
+    fetch('https://vikassharma7661.github.io/Elmart/Assets/Scripts/foodItems.json')
         .then(response => response.json())
         .then(data => {
             foodData = data;
